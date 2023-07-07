@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    position: fixed;
+    width: 100vw;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #282d46;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1f2337;
+}
+
+@layer base {
+    body {
+        @apply bg-baseColor-black;
+        @apply text-baseColor-white;
+    }
+
+    .custom-bg-img {
+        @apply flex;
+        @apply fixed;
+        @apply top-0;
+        @apply right-0;
+        @apply left-0;
+        @apply bg-cover;
+        @apply h-screen
+    }
+
+    .page-content-wrapper {
+        @apply flex;
+        @apply flex-col;
+        @apply w-full;
+        @apply px-horizontal-page-sm;
+        @apply overflow-auto;
+        @apply absolute;
+        @apply top-gap-top-content-sm;
+    }
+
+    .icon-crew-slider {
+        @apply absolute;
+        @apply top-1/2;
+        @apply translate-y-[-50%];
+        @apply rounded-full;
+        @apply p-2;
+        @apply bg-[#393939];
+        @apply opacity-50;
+    }
+
+    .icon-crew-slider:hover {
+        @apply cursor-pointer;
+    }
+
+    .circle-crew-indicator {
+        @apply w-2;
+    }
+
+    .circle-crew-indicator.active {
+        @apply opacity-100;
+    }
+
+    .destination-tab {
+        @apply text-baseColor-light-gray;
+    }
+
+    .destination-tab.active {
+        @apply text-baseColor-white;
+    }
+
+    .tech-indicator {
+        @apply flex;
+        @apply justify-center;
+        @apply items-center;
+        @apply rounded-full;
+        @apply border-baseColor-white;
+        @apply border-[1px];
+    }
+
+    /* .nav-item.active {
+        @apply border-b-baseColor-white;
+    }
+
+    .nav-item.active {
+        @apply border-transparent;
+    } */
+
+}
+
+.crew-slider>div:nth-child(2) {
+    bottom: 0 !important;
+}
+
+.circle-crew-indicator {
+    color: white;
+    opacity: 0.17;
+    transition: opacity 0.5s ease-in;
+}
+
+.circle-crew-indicator:hover {
+    opacity: 0.5;
+}
+
+.icon-crew-slider {
+    visibility: hidden;
+}
+
+.img-slider-crew:hover .icon-crew-slider {
+    visibility: visible;
+    transition: all .5s;
+}
+
+.tech-indicator.active {
+    color: #0B0D17;
+    background-color: white;
+}
+
+.btn-cta:hover {
+    animation: btn-pulse 2s infinite 1s cubic-bezier(0.25, 0, 0, 1);
+}
+
+@keyframes btn-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 80px rgb(255, 255, 255, 0);
+    }
+}
