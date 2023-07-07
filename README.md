@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/space-tourism-using-nextjs-and-tailwindcss-ibCwPd54Vs)
-- Live Site URL: [Add live site URL here](https://space-tourship.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/space-tourism-using-nextjs-and-tailwindcss-ibCwPd54Vs]
+- Live Site URL: [https://space-tourship.netlify.app/]
 
 ## My process
 
