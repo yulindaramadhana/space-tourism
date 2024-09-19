@@ -9,7 +9,8 @@ import { LineSeparator } from "./line-separator";
 const NAVLIST = [{ name: "Home", path: "/" },
 { name: "Destination", path: "/destination" },
 { name: "Crew", path: "/crew" },
-{ name: "Technology", path: "/technology" }];
+{ name: "Technology", path: "/technology" },
+{ name: "About Us", path: "/about" }];
 
 export const NavMenu = () => {
     const pathname = usePathname();
