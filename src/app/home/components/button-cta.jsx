@@ -7,6 +7,7 @@ export function ButtonCta() {
 
     return (
         <button
+            id="cta-btn-explore"
             className="btn-cta
                             text-btn-cta-sm
                             md:text-btn-cta
