@@ -26,7 +26,7 @@ export default async function About() {
                 <PageTitle title={"CONNECT WITH US"} id={"04"} key={'page-about-title'} />
                 <div className="flex flex-col gap-y-2 items-start">
                     <input type="text" id="input-subcribe" placeholder="email" className="text-baseColor-black p-4 rounded-sm" />
-                    <button id="btn-subscribe" className="p-4 bg-baseColor-black uppercase rounded-sm hover:bg-baseColor-black/80">Subscribe</button>
+                    <button id="btn-subscribe" className="p-4 py-2 bg-baseColor-black uppercase rounded-sm hover:bg-baseColor-black/80">Subscribe</button>
                 </div>
             </div>
         </div>
